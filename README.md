@@ -10,31 +10,6 @@ Dashboard acadêmico em **Streamlit** para as Aulas 21–23 de Análise e Visual
 - **Dashboard 2 · Inteligência do catálogo:** quatro KPIs (total, IMDb médio, percentual com IMDb ≥ 7, proporção de filmes) e três gráficos complementares (formato, gêneros, lançamentos por ano).
 - Filtros compartilhados para tipo, gênero e ano, seleção entre base original e tratada, cache de leitura, download de CSV e identidade visual própria azul-petróleo/verde-água/lilás.
 
-## Executar localmente (PowerShell)
-
-```powershell
-py -3.12 -m venv venv
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python preparar_dados.py
-python -m streamlit run app.py
-```
-
-`preparar_dados.py` requer internet na primeira execução e baixa o dataset `zohairbaloch/netflix-titles-enriched-with-imdb-and-tmdb` do Kaggle. Os arquivos CSV **não vieram no ZIP de origem**, por isso precisam ser gerados e versionados antes do deploy. A base tratada utiliza imputação por mediana para IMDb/TMDB e categoria para gênero ausente, conforme o notebook.
-
-### Checklist de entrega
-
-- [ ] CSVs gerados e enviados para `data/clean/`
-- [ ] App abre localmente sem erros e filtros atualizam os gráficos
-- [ ] Dashboard 1 suporta 0, 1 e 2+ variáveis
-- [ ] Dashboard 2 contém quatro KPIs e três visuais
-- [ ] `entregas/` contém os dois rascunhos e justificativa das métricas
-- [ ] `prompts/declaracao-uso-ia.md` revisado
-- [ ] GitHub público, branch `main`, `git status` limpo
-- [ ] Link real do app incluído neste README
-- [ ] App público testado em janela anônima
-
 ## Estrutura
 
 ```
