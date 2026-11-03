@@ -2,7 +2,7 @@
 
 Dashboard acadêmico em **Streamlit** para as Aulas 21–23 de Análise e Visualização de Dados, desenvolvido a partir da EDA do catálogo Netflix enriquecido com dados IMDb/TMDB.
 
-**Aplicação publicada:** `https://netflix-dashboard-app-alan.streamlit.app`
+**Aplicação publicada:** `[https://netflix-dashboard-app-alan.streamlit.app](https://netflix-dashboard-app-alan.streamlit.app)`
 
 ## Funcionalidades
 
