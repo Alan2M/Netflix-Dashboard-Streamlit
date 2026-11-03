@@ -26,7 +26,7 @@ entregas/justificativa-metricas.md
 prompts/declaracao-uso-ia.md
 ```
 
-**Observação:** os rascunhos são layouts esquemáticos produzidos como documentação da interface, não capturas da aplicação executada. Projeto educacional não afiliado à Netflix.
+**Observação:** A declaração de IA foi enviada em PDF no google classroom
 
 ## Fidelidade à EDA original
 
