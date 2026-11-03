@@ -2,7 +2,7 @@
 
 Dashboard acadêmico em **Streamlit** para as Aulas 21–23 de Análise e Visualização de Dados, desenvolvido a partir da EDA do catálogo Netflix enriquecido com dados IMDb/TMDB.
 
-**Aplicação publicada:** `INSERIR_AQUI_O_LINK_APOS_O_DEPLOY` (o deploy deve ser realizado pelo proprietário do repositório).
+**Aplicação publicada:** `(https://netflix-dashboard-app-alan.streamlit.app/)` (o deploy deve ser realizado pelo proprietário do repositório).
 
 ## Funcionalidades
 
@@ -22,14 +22,6 @@ python -m streamlit run app.py
 ```
 
 `preparar_dados.py` requer internet na primeira execução e baixa o dataset `zohairbaloch/netflix-titles-enriched-with-imdb-and-tmdb` do Kaggle. Os arquivos CSV **não vieram no ZIP de origem**, por isso precisam ser gerados e versionados antes do deploy. A base tratada utiliza imputação por mediana para IMDb/TMDB e categoria para gênero ausente, conforme o notebook.
-
-## Publicar no Streamlit Community Cloud
-
-1. Execute `python preparar_dados.py` localmente e confirme `data/clean/netflix_original.csv` e `data/clean/netflix_tratado.csv`.
-2. Teste o app. Execute `git status`, `git add app.py preparar_dados.py requirements.txt README.md .gitignore .streamlit/config.toml notebooks entregas prompts data` e `git commit -m "Aula 23 - Netflix Atlas dashboards e deploy"`; depois `git push origin main`.
-3. Acesse **https://share.streamlit.io/** e conecte sua conta GitHub.
-4. Selecione **Create app → Deploy a public app from GitHub**, repositório `Alan2M/Netflix-Dashboard-Streamlit`, branch `main` e arquivo principal `app.py`. Escolha Python 3.12 em Advanced settings, se disponível.
-5. Após a publicação, abra em janela anônima, teste os filtros nas duas abas e **substitua o marcador do link no início deste README** pelo URL real do app. Faça novo commit e push do README.
 
 ### Checklist de entrega
 
